@@ -1,0 +1,2 @@
+Version 0.1 
+Added A set of plugin recommended to be installed.
