@@ -1,0 +1,53 @@
+/*
+Theme Name: Divi-Child by Think Web
+Theme URI: http://thinkweb.agency/
+Description: A Divi-child theme made by Think Web to speedup the website building process.
+Author: Prince Kumar
+Author URI: https://thinkweb.agency/
+Author Email: 
+Template: Divi
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, responsive-layout, one-column, two-columns, theme-options, translation-ready
+Text Domain: thinkweb-agency
+*/
+
+
+/*Make Gallery image thumbnail square*/
+.et_pb_gallery_item img {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+.et_pb_gallery_image {
+    padding-top: 100%;
+}
+/*Make Gallery image thumbnail square*/
+
+/*** Take out the divider line between content and sidebar ***/
+#main-content .container:before {background: none;}
+ 
+/*** Hide Sidebar ***/
+#sidebar {display:none;}
+ 
+/*** Expand the content area to fullwidth ***/
+@media (min-width: 981px){
+#left-area {
+    width: 100%;
+    padding: 23px 0px 0px !important;
+    float: none !important;
+}
+}
+
+/*Collapsing Divi Menu*/
+#main-header .et_mobile_menu .menu-item-has-children > a { background-color: transparent; position: relative; }
+#main-header .et_mobile_menu .menu-item-has-children > a:after { font-family: 'ETmodules'; text-align: center; speak: none; font-weight: normal; font-variant: normal; text-transform: none; -webkit-font-smoothing: antialiased; position: absolute; }
+#main-header .et_mobile_menu .menu-item-has-children > a:after { font-size: 16px; content: '\4c'; top: 13px; right: 10px; }
+#main-header .et_mobile_menu .menu-item-has-children.visible > a:after { content: '\4d'; }
+#main-header .et_mobile_menu ul.sub-menu { display: none !important; visibility: hidden !important;  transition: all 1.5s ease-in-out;}
+#main-header .et_mobile_menu .visible > ul.sub-menu { display: block !important; visibility: visible !important; }
